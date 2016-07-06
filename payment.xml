@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ir.ui.menu" id="account_payment.menu_payment_group_form">
+            <field name="active" eval="False"/>
+        </record>
+
+        <record model="ir.ui.menu" id="account_payment.menu_payment_form">
+            <field name="active" eval="False"/>
+        </record>
+
+    </data>
+</tryton>

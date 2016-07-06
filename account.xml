@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+      <record model="ir.ui.menu" id="account_payment.menu_move_line_form">
+          <field name="active" eval="False"/>
+      </record>
+
+        <record model="ir.action.act_window" id="act_payable_line_form">
+            <field name="name">Por pagar</field>
+            <field name="res_model">account.move.line</field>
+            <field name="domain">[('account.kind', 'in', ['payable']), ('party', '!=', None), ('reconciliation', '=', None), ('payment_amount', '!=', 0)]</field>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_payable_line_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="account_payment.move_line_view_list"/>
+            <field name="act_window" ref="act_payable_line_form"/>
+        </record>
+
+        <menuitem parent="account_payment.menu_payments" action="act_payable_line_form"
+            sequence="2" id="menu_payable_form"/>
+
+        <record model="ir.action.act_window" id="act_receivable_line_form">
+          <field name="name">Por cobrar</field>
+          <field name="res_model">account.move.line</field>
+          <field name="domain">[('account.kind', 'in', ['receivable']), ('party', '!=', None), ('reconciliation', '=', None), ('payment_amount', '!=', 0)]</field>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_receivable_line_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="account_payment.move_line_view_list"/>
+            <field name="act_window" ref="act_receivable_line_form"/>
+        </record>
+
+        <menuitem parent="account_payment.menu_payments" action="act_receivable_line_form"
+          sequence="3" id="menu_receivable_form"/>
+    </data>
+</tryton>
