@@ -10,7 +10,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.action.act_window" id="act_payable_line_form">
             <field name="name">Por pagar</field>
             <field name="res_model">account.move.line</field>
-            <field name="domain">[('account.kind', 'in', ['payable']), ('party', '!=', None), ('reconciliation', '=', None), ('payment_amount', '!=', 0)]</field>
+            <field name="domain" eval="[('account.kind', 'in', ['payable']), ('party', '!=', None), ('reconciliation', '=', None), ('payment_amount', '!=', 0)]" pyson="1"/>
         </record>
 
         <record model="ir.action.act_window.view" id="act_payable_line_form_view1">
@@ -25,7 +25,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.action.act_window" id="act_receivable_line_form">
           <field name="name">Por cobrar</field>
           <field name="res_model">account.move.line</field>
-          <field name="domain">[('account.kind', 'in', ['receivable']), ('party', '!=', None), ('reconciliation', '=', None), ('payment_amount', '!=', 0)]</field>
+          <field name="domain" eval="[('account.kind', 'in', ['receivable']), ('party', '!=', None), ('reconciliation', '=', None), ('payment_amount', '!=', 0)]" pyson="1"/>
         </record>
 
         <record model="ir.action.act_window.view" id="act_receivable_line_form_view1">
