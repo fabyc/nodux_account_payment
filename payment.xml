@@ -14,6 +14,5 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.ui.menu" id="account_payment.menu_payment_configuration">
           <field name="active" eval="False"/>
         </record>
-
     </data>
 </tryton>
