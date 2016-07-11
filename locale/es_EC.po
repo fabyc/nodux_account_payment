@@ -1,0 +1,71 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:sale.sale,cash_amount:"
+msgid "Cash Amount"
+msgstr "Monto efectivo"
+
+msgctxt "field:sale.sale,check_amount:"
+msgid "Check Amount"
+msgstr "Monto cheques"
+
+msgctxt "field:sale.sale,maturity_date:"
+msgid "Maturity Date"
+msgstr "Fecha de vencimiento"
+
+msgctxt "field:sale.sale,state_date:"
+msgid "State Date"
+msgstr "Estado de vencimiento"
+
+msgctxt "help:sale.sale,cash_amount:"
+msgid "Payment cash amount"
+msgstr "Monto pagado en efectivo"
+
+msgctxt "help:sale.sale,check_amount:"
+msgid "Payment check amount"
+msgstr "Monto pagado en cheques"
+
+msgctxt "model:ir.action,name:act_payable_form"
+msgid "Por pagar"
+msgstr ""
+
+msgctxt "model:ir.action,name:act_receivable_form"
+msgid "Por cobrar"
+msgstr ""
+
+msgctxt "model:ir.ui.menu,name:menu_payable_form"
+msgid "Por pagar"
+msgstr ""
+
+msgctxt "model:ir.ui.menu,name:menu_receivable_form"
+msgid "Por cobrar"
+msgstr ""
+
+msgctxt "view:purchase.purchase:"
+msgid "Purchases"
+msgstr "Compras"
+
+msgctxt "view:sale.sale:"
+msgid "Monto cobrado"
+msgstr ""
+
+msgctxt "view:sale.sale:"
+msgid "Monto en cheques"
+msgstr ""
+
+msgctxt "view:sale.sale:"
+msgid "Monto en efectivo"
+msgstr ""
+
+msgctxt "view:sale.sale:"
+msgid "Pendiente por cobrar"
+msgstr ""
+
+msgctxt "view:sale.sale:"
+msgid "Sales"
+msgstr "Ventas"
+
+msgctxt "view:sale.sale:"
+msgid "Total"
+msgstr "Total"
