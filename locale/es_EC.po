@@ -2,6 +2,26 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:purchase.purchase,cash_amount:"
+msgid "Cash Amount"
+msgstr "Monto efectivo"
+
+msgctxt "field:purchase.purchase,check_amount:"
+msgid "Check Amount"
+msgstr "Monto cheques"
+
+msgctxt "field:purchase.purchase,maturity_date:"
+msgid "Maturity Date"
+msgstr "Fecha de vencimiento"
+
+msgctxt "field:purchase.purchase,residual_amount:"
+msgid "Residual Amount"
+msgstr "Pendiente"
+
+msgctxt "field:purchase.purchase,state_date:"
+msgid "State Date"
+msgstr "Estado de vencimiento"
+
 msgctxt "field:sale.sale,cash_amount:"
 msgid "Cash Amount"
 msgstr "Monto efectivo"
@@ -17,6 +37,14 @@ msgstr "Fecha de vencimiento"
 msgctxt "field:sale.sale,state_date:"
 msgid "State Date"
 msgstr "Estado de vencimiento"
+
+msgctxt "help:purchase.purchase,cash_amount:"
+msgid "Payment cash amount"
+msgstr "Monto pagado en efectivo"
+
+msgctxt "help:purchase.purchase,check_amount:"
+msgid "Payment check amount"
+msgstr "Monto pagado en cheques"
 
 msgctxt "help:sale.sale,cash_amount:"
 msgid "Payment cash amount"
@@ -43,8 +71,24 @@ msgid "Por cobrar"
 msgstr ""
 
 msgctxt "view:purchase.purchase:"
+msgid "Monto en cheques"
+msgstr ""
+
+msgctxt "view:purchase.purchase:"
+msgid "Monto en efectivo"
+msgstr ""
+
+msgctxt "view:purchase.purchase:"
+msgid "Monto pendiente pagar"
+msgstr ""
+
+msgctxt "view:purchase.purchase:"
 msgid "Purchases"
 msgstr "Compras"
+
+msgctxt "view:purchase.purchase:"
+msgid "Total"
+msgstr "Total"
 
 msgctxt "view:sale.sale:"
 msgid "Monto cobrado"

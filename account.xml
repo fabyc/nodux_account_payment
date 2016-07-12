@@ -17,7 +17,7 @@ this repository contains the full copyright notices and license terms. -->
       <record model="ir.action.act_window" id="act_receivable_form">
         <field name="name">Por cobrar</field>
         <field name="res_model">sale.sale</field>
-        <field name="domain">[('party', '!=', None), ('state', '=', 'processing'), ('invoice_state', '=', 'waiting')]</field>
+        <field name="domain">[('party', '!=', None), ('state', '=', 'processing'), ('invoice_state', '=', 'waiting'), ('total_amount_cache', '>=', 0)]</field>
       </record>
 
       <record model="ir.action.act_window.view" id="act_receivable_form_view1">
