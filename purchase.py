@@ -164,7 +164,6 @@ class Purchase():
                         for l in lines:
                             date = l.maturity_date
                 if date < date_now:
-                    print "Esta vencida"
                     result[name][purchase.id] = 'vencida'
                 else:
                     result[name][purchase.id] = ''
@@ -175,7 +174,7 @@ class Purchase():
         pool = Pool()
         InvoiceLine = pool.get('account.invoice.line')
         Invoice = pool.get('account.invoice')
-        MoveLine = pool.get('account.voucher.line')
+        MoveLine = pool.get('account.move.line')
         PaymentLine = pool.get('account.voucher.line.paymode')
         amount = Decimal(0.0)
         residual_amount = Decimal(0.0)
@@ -193,16 +192,11 @@ class Purchase():
                     for i in invoices:
                         invoice = i.number
                     move_lines = MoveLine.search([
-                            ('name', '=', invoice),
+                            ('description', '=', invoice),
+                            ('description', '!=', None),
                         ])
                     for line in move_lines:
-                        payment_all = PaymentLine.search([('voucher', '=', line.voucher.id)])
-                        for p in payment_all:
-                            name_pay = p.pay_mode.name.lower()
-                            if 'efectivo' in name_pay:
-                                amount += p.pay_amount
-                            elif 'cheque' in name_pay:
-                                amount += p.pay_amount
+                        amount += line.debit
                 residual_amount = purchase.total_amount - amount
                 if residual_amount:
                     result[name][purchase.id] = residual_amount

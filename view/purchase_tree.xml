@@ -8,8 +8,8 @@ this repository contains the full copyright notices and license terms. -->
     <field name="state"/>
     <field name="maturity_date"/>
     <field name="total_amount" sum="Total"/>
-    <field name="check_amount" sum="Monto en cheques"/>
-    <field name="cash_amount" sum="Monto en efectivo"/>
+    <!--field name="check_amount" sum="Monto en cheques"/>
+    <field name="cash_amount" sum="Monto en efectivo"/-->
     <field name="residual_amount" sum="Monto pendiente pagar"/>
     <field name="state_date" tree_invisible="1"/>
 </tree>
